@@ -12,6 +12,7 @@ body {
   line-height: 1.4;
   color: var(--color-on-surface);
   background-color: var(--color-background);
+  text-align: center;
 }
 /* typography */
 h1,
@@ -29,6 +30,7 @@ h1 {
   line-height: var(--heading-h1-leading);
 }
 h2 {
+  color: var(--color-on-surface);
   font-size: var(--heading-h2-size);
   line-height: var(--heading-h2-leading);
 }
@@ -95,54 +97,16 @@ nav a {
 nav a:hover {
   color: var(--color-on-primary-20);
 }
-/* search */
-input,
-input,
-button {
-  margin: 0.8em 0.2em 0.8em 0.2em;
-  font-family: "Didact Gothic", sans-serif;
-}
-label {
-  margin-left: 2rem;
-}
-input {
-  padding: 0.5em;
-}
-button {
-  padding: 0.5em 1em;
-  background-color: var(--color-surface);
-  font-weight: bold;
-  letter-spacing: 0.07em;
-}
-button:hover {
-  background-color: var(--color-on-surface);
-  color: var(--color-surface);
-}
-/* img */
-.section-with-img {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.section-with-img h1 {
-  flex-basis: 100%;
-}
-.section-with-img img {
-  width: 50vw;
-}
-.section-with-img p {
-  font-size: var(--heading-h4-size);
-  line-height: var(--heading-h4-leading);
-}
-/* video */
-section video {
-  width: 100%;
-}
+
 /* form */
 form {
-  width: 68vw;
+  width: 88vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 760px) {
+  form {
+    width: 68vw;
+  }
 }
 form fieldset {
   text-align: center;
@@ -155,18 +119,15 @@ form legend {
 form p {
   text-align: center;
 }
-form label[for="self"] {
-  margin-left: 0;
-}
-form div label {
+form label {
   display: block;
-  text-align: left;
-  margin-left: 0.25rem;
 }
-form div input {
+
+form input {
   width: 100%;
   font-size: 1.2rem;
   margin-top: 0.25rem;
+  padding: 0.5em;
 }
 
 form input[type="submit"] {
@@ -184,4 +145,29 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: var(--color-on-surface);
   color: var(--color-surface);
+}
+
+/* progress bar */
+#result-container {
+  width: 280px;
+  margin: 2rem auto;
+}
+#strengthProgressBar {
+  display: flex;
+  border: 1px solid var(--color-secondary);
+}
+#strengthProgressBarStatus {
+  height: 24px;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+.hidden {
+  display: none;
 }
