@@ -1,0 +1,23 @@
+{
+  "name": "tr-dom-assignment",
+  "version": "1.0.0",
+  "description": "Create a HTML/CSS/JS project which allows users to enter a password and check its strength.  # 💻 Intro to the DOM - Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZannaP/tr-dom-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZannaP/tr-dom-assignment/issues"
+  },
+  "homepage": "https://github.com/ZannaP/tr-dom-assignment#readme",
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
